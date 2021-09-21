@@ -1,7 +1,10 @@
 {
-  "name": "teach-koa-setup",
+  "name": "01-koa-setup-cli",
   "type": "module",
   "version": "1.0.0",
+  "bin": {
+    "koa-setup": "./bin/index.js"
+  },
   "scripts": {
     "test": "rm -rf ./haha && node index.js"
   },
@@ -9,7 +12,11 @@
   "license": "MIT",
   "dependencies": {
     "ejs": "^3.1.6",
+    "execa": "^5.1.1",
+    "inquirer": "^8.1.5",
     "koa": "^2.13.1",
-    "koa-router": "^10.1.1"
+    "koa-router": "^10.1.1",
+    "koa-static": "^5.0.0",
+    "prettier": "^2.4.1"
   }
 }
